@@ -3,11 +3,18 @@ Let's Play
 
 Development
 -
-Install dependencies and run the dev server (Vite):
+The project now serves static HTML; you can open `index.html` directly in a browser, or run a simple static server for correct routing.
 
 ```bash
+# install wrangler only if you plan to use Cloudflare Pages/ D1 from CLI
 npm install
-npm run dev
+
+# quick static server examples:
+# Python 3 built-in server (from project root):
+python -m http.server 5173
+
+# or use a node static server (install globally or npx):
+npx serve . -l 5173
 ```
 
 Local API mock functions are under `functions/api/devices/index.js` (Pages Functions). To run Cloudflare Pages locally with functions and D1 you'll need `wrangler` configured and an account; see `wrangler.toml`.
@@ -20,9 +27,6 @@ Using D1 (Cloudflare SQLite)
 
 ```bash
 npm install
-# run Vite dev for static frontend
-npm run dev
-
 # or run Pages with functions locally (requires wrangler login + Pages setup):
 npm run dev:pages
 ```
