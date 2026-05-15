@@ -1,0 +1,11 @@
+name = "playground"
+compatibility_date = "2026-05-15"
+type = "javascript"
+
+# Account-specific fields can be filled before deployment
+account_id = ""
+
+[[d1_databases]]
+binding = "D1"
+database_name = "PLAYGROUND_DB"
+database_id = "9ae96eb1-4c3d-4a02-b026-c041f866e780"

@@ -1,0 +1,18 @@
+{
+  "name": "playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "dev:pages": "wrangler pages dev .",
+    "d1:apply-schema": "echo 'Use wrangler d1 commands to apply schema or use Cloudflare dashboard'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "wrangler": "^4.91.0"
+  }
+}

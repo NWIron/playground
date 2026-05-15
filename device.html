@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>设备详情 — Playground</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:#fafafa }
+      header { height:56px; background:#0a6ed1; color:#fff; display:flex; align-items:center; padding:0 16px }
+      main { padding:12px; max-width:800px; margin:0 auto }
+      p{margin:6px 0}
+      a.back{display:inline-block;margin-bottom:12px;color:#0a6ed1;text-decoration:none}
+    </style>
+  </head>
+  <body>
+    <header>设备详情展示</header>
+    <main>
+      <a class="back" href="/">← 返回列表</a>
+      <div id="detail">加载中…</div>
+    </main>
+    <script src="/static/app.js"></script>
+    <script>window.addEventListener('DOMContentLoaded', initDetail)</script>
+  </body>
+</html>
