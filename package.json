@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "node scripts/build.js",
     "dev:pages": "wrangler pages dev .",
     "d1:apply-schema": "echo 'Use wrangler d1 commands to apply schema or use Cloudflare dashboard'"
   },
